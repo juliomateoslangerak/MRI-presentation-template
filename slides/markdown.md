@@ -1,5 +1,9 @@
-# Markdown Demo
+# OMERO basics
+________________________
+_Julio Mateos Langerak_
 
+<img src="images/Biocampus_logo_full.png" alt="drawing" height="100" style="float:left"/>
+<img src="images/MRI_logo_full.png" alt="drawing" height="100" style="float:right"/>
 
 
 ## External 1.1
