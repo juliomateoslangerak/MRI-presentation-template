@@ -1,3 +1,13 @@
++++
+title: Presentation template
+separator: <!--s-->
+verticalSeparator: <!--v-->
+theme: moon
+revealOptions:
+transition: 'fade'
++++
+
+
 # Presentation template
 ________________________
 _Author name_
