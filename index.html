@@ -1,40 +1,96 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- Replace this with the title of the presentation. This text will show in the window title -->
+		<title>MRI presentation template</title>
 
-		<title>reveal.js</title>
+		<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js-master/dist/theme/sky.css" id="theme">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+        <link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css">
 	</head>
+
 	<body>
+
 		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+			<div id="MRI_Logo" style="position: absolute;
+                        bottom: 100px;
+                        left: 100px;
+						max-width: 165px;
+    					max-height: 100px;">
+				<img style="object-fit: contain" src="images/MRI_logo_small.png">
 			</div>
+
+			<div class="slides">
+
+                <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+				<section data-markdown
+						 title="Opening slide">
+					<textarea data-template>
+							## Presentation template
+							________________________
+							_Author name_
+
+							<img src="images/Biocampus_logo_full.png" alt="drawing" height="100" style="float:left"/>
+							<img src="images/MRI_logo_full.png" alt="drawing" height="100" style="float:right"/>
+					</textarea>
+
+
+
+				</section>
+
+
+                <section data-markdown
+						 data-separator="^\n---\n"
+						 data-separator-vertical="^\n\n"
+						 data-separator-notes="^Note:">
+					<textarea data-template>
+						### Slide 1.1
+
+						Content 1.1
+
+						Note: This will only appear in the speaker notes window.
+
+
+						### Slide 1.2
+
+						Content 1.2
+
+						---
+
+						### Slide 2
+						- Bullet
+						  1. Sub-bullet
+						  2. Another sub-bullet
+						- Another bullet
+
+					</textarea>
+
+                </section>
+
+            </div>
 		</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+		<script src="reveal.js-master/dist/reveal.js"></script>
+        <script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+        <script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+        <script src="reveal.js-master/plugin/notes/notes.js"></script>
 
-				// Learn about plugins: https://revealjs.com/plugins/
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+
 		</script>
+
 	</body>
 </html>
