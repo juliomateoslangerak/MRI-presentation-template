@@ -16,18 +16,11 @@
 
 		<div class="reveal">
 
-			<div id="MRI_Logo" style="position: absolute;
-                        bottom: 100px;
-                        left: 100px;
-						max-width: 165px;
-    					max-height: 100px;">
-				<img style="object-fit: contain" src="images/MRI_logo_small.png">
-			</div>
-
 			<div class="slides">
 
                 <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
-				<section data-markdown
+				<section data-auto-animate
+						 data-markdown
 						 title="Opening slide">
 					<textarea data-template>
 							## Presentation template
@@ -43,7 +36,11 @@
 				</section>
 
 
-                <section data-markdown
+                <section data-auto-animate
+						 data-background-image="images/MRI_logo_small.png"
+						 data-background-size="165px 100px"
+						 data-background-position="bottom 8% left 5%"
+						 data-markdown
 						 data-separator="^\n---\n"
 						 data-separator-vertical="^\n\n"
 						 data-separator-notes="^Note:">
@@ -82,11 +79,11 @@
 		<script>
 
 			Reveal.initialize({
+				transition: 'convex',
 				controls: true,
 				progress: true,
 				history: true,
 				center: true,
-
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 
